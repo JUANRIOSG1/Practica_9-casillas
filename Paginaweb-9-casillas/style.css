@@ -1,0 +1,27 @@
+body {
+    background-color: black;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-gap: 50px 100px;
+}
+
+.item {
+    background-color: blue;
+    padding: 20px;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .grid-container {
+        grid-gap: 25px 50px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr); 
+        grid-gap: 10px; 
+    }
+}
